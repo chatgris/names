@@ -13,4 +13,10 @@ defmodule HomeTest do
     conn = get("/hello/chatgris")
     assert conn.resp_headers["Content-Type"] == "application/json"
   end
+
+  test "returns a json response" do
+    conn = get("/hello/chatgris")
+    assert JSON.parse(conn.sent_body)["Hello"] == "chatgris"
+  end
+
 end
