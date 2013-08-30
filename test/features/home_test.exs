@@ -4,8 +4,8 @@ defmodule HomeTest do
   use Names.TestCase
   use Dynamo.HTTP.Case
 
-  test "returns OK" do
-    conn = get("/")
+  test "returns chatgris" do
+    conn = get("/hello/chatgris")
     assert conn.status == 200
   end
 end
