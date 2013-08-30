@@ -19,6 +19,8 @@ defmodule Names.Mixfile do
 
   defp deps do
     [ { :cowboy, github: "extend/cowboy" },
-      { :dynamo, github: "elixir-lang/dynamo", tag: "elixir-0.10.1" } ]
+      { :dynamo, github: "elixir-lang/dynamo", tag: "elixir-0.10.1" },
+      { :exjson, git: "https://github.com/guedes/exjson.git" }
+    ]
   end
 end
